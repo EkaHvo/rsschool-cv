@@ -4,10 +4,10 @@ Ekaterina Khvostova
 
 **Contacts**
 
-Phone: +79175539006
-Mail: ekasagalaeva@gmail.ru
-Github: @EkaHvo
-Linkedin: https://www.linkedin.com/in/ekaterina-hvostova/
+* Phone: +79175539006
+* Mail: ekasagalaeva@gmail.ru
+* Github: @EkaHvo
+* Linkedin: https://www.linkedin.com/in/ekaterina-hvostova/
 
 **Objective**
 
@@ -53,9 +53,9 @@ But you can see my study projects at [Github](https://github.com/EkaHvo)
 
 **Qualifications**
 
-August — December 2020: HTML/CSS developer - [ITILOGIA](https://itlogia.ru/)
-January 2020: Web-developer - [UDEMY](https://www.udemy.com/course/webdeveloper/)
-January 2020 - continue: JavaScript + React [UDEMY](https://www.udemy.com/course/javascript_full/)
+* August — December 2020: HTML/CSS developer - [ITILOGIA](https://itlogia.ru/)
+* January 2020: Web-developer - [UDEMY](https://www.udemy.com/course/webdeveloper/)
+* January 2020 - continue: JavaScript + React [UDEMY](https://www.udemy.com/course/javascript_full/)
 
 **English**
 
