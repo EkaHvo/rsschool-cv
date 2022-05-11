@@ -44,8 +44,8 @@ menuActive(overlayElem);
 
 **Work Experience**
 
-07.2021 - now - Frontend Developer
-04.2021 - 06.2021 - web-master
+* 07.2021 - now - Frontend Developer
+* 04.2021 - 06.2021 - web-master
 
 **Qualifications**
 
