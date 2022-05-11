@@ -12,21 +12,17 @@ Ekaterina Khvostova
 **Objective**
 
 My goal is to become a professional in front-end development in 5 years.
-Six months ago, I radically changed my profession from HR administration. 
+Year, I radically changed my profession from HR administration. 
 Thanks to my previous profession, I have strong communication skills, attention to detail,
 teamwork. I always evaluate my work in terms of benefits for the company.
 I like to learn new things very much, I quickly find my bearings in new information.
 
 **Special skills**
 
-* HTML 5, 
-* CSS 3,
-* Javascript - basic skills
-* SCSS, 
-* GULP
-* Working with Version Control Systems (Git)
-* Photoshop, 
-* Figma. 
+* HTML, CSS, SCSS, GULP,
+* Javascript, Vue - basic skills,
+* Git,
+* Photoshop, Figma. 
 
 **My code**
 
@@ -48,8 +44,8 @@ menuActive(overlayElem);
 
 **Work Experience**
 
-Now I have no work experience. 
-But you can see my study projects at [Github](https://github.com/EkaHvo)
+07.2021 - now - Frontend Developer
+04.2021 - 06.2021 - web-master
 
 **Qualifications**
 
@@ -57,6 +53,7 @@ But you can see my study projects at [Github](https://github.com/EkaHvo)
 * January 2020: Web-developer - [UDEMY](https://www.udemy.com/course/webdeveloper/)
 * January 2020 - continue: JavaScript + React [UDEMY](https://www.udemy.com/course/javascript_full/)
 
-**English**
+**Languages**
 
-A2 (I am learning English now to improve my level)
+*English - A2
+*Russian - Native
