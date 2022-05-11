@@ -55,5 +55,5 @@ menuActive(overlayElem);
 
 **Languages**
 
-*English - A2
-*Russian - Native
+* English - A2
+* Russian - Native
