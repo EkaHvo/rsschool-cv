@@ -5,11 +5,149 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <div class="container">
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#objective">Objective</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#code">Code</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#laguages">Laguages</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="main">
+      <figure class="my-photo">
+          <img src="images/main_photo.jpg" alt="my photo">
+          <figcaption>Ekaterina Khvostova</figcaption>
+      </figure>
+
+      <h1 class="title main-title">Front-End Developer</h1>
+
+
+
+      <section class="objective" id="objective">
+          <h2 class="title">Objective:</h2>
+          <p class="descr">My goal is to become a professional in the field of front-end development in 5 years. I have experience in large companies, teamwork skills. I love to get new knowledge and share it with colleagues.
+          </p>
+      </section>
+
+      <section class="skills" id="skills">
+          <h2 class="title">
+              Special skills:
+          </h2>
+          <ul class="list">
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>Javascript - basic skills</li>
+              <li>SCSS</li>
+              <li>GULP</li>
+              <li>Working with Version Control Systems (Git)</li>
+              <li>Photoshop</li>
+              <li>Figma</li>
+          </ul>
+      </section>
+
+      <section class="code-exmpl" id="code">
+          <h2 class="title">
+              My code:
+          </h2>
+          <code class="descr">
+              const burger = document.querySelector('.burger'); <br>
+              const menu = document.querySelector('.menu');<br>
+              const closeElem = document.querySelector('.menu__close');<br>
+              const overlayElem = document.querySelector('.menu__overlay');<br>
+              <br>
+              function menuActive(item) {<br>
+                  item.addEventListener('click', () => {<br>
+                      menu.classList.toggle('active');<br>
+                  });<br>
+              }<br>
+              <br>
+              menuActive(burger);<br>
+              menuActive(closeElem);<br>
+              menuActive(overlayElem);<br>
+          </code>
+      </section>
+
+      <section class="experience" id="experience">
+          <h2 class="title">
+              Work Experience:
+          </h2>
+          <p class="descr">
+              Now I have no work experience. 
+              But you can see my study projects at 
+              <a href="https://github.com/EkaHvo">Github</a>
+          </p>
+      </section>
+
+      <section class="course">
+          <h2 class="title">
+              Qualifications:
+          </h2>
+          <div class="course-item">
+              <div class="course-period">August — December 2020: HTML/CSS developer</div>
+              <a class="course-link" href="https://itlogia.ru/">ITILOGIA</a>
+          </div>
+          <div class="course-item">
+              <div class="course-period">January 2020: Web-developer</div>
+              <a class="course-link" href="https://www.udemy.com/course/webdeveloper/">UDEMY</a>
+          </div>
+          <div class="course-item">
+              <div class="course-period">January 2020 - continue: JavaScript + React</div>
+              <a class="course-link" href="https://www.udemy.com/course/javascript_full/">UDEMY</a>
+          </div>
+      </section>
+
+      <section class="Laguages" id="laguages">
+        <h2 class="title">
+            Laguages:
+        </h2>
+        <ul class="list">
+          <li>English - A2</li>
+          <li>Russian - native</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div>2022</div>
+      <section class="contacts" id="contacts">
+        <ul class="list">
+            <li>
+              <a href="mailto:ekasagalaeva@gmail.ru" class="contacts-link gmail-link"></a>
+            </li>
+            <li>
+              <a href="https://github.com/EkaHvo" class="contacts-link github-link"></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ekaterina-hvostova/" class="contacts-link linkedin-link"></a>
+            </li>
+        </ul>
+      </section>
+      <a href="https://rs.school/" class="contacts-link rs-link"></a>
+    </footer>
+  </div>
   
 </body>
 </html>
