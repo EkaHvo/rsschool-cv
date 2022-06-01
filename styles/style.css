@@ -42,16 +42,13 @@ a {
   color: var(--bg-color-light);
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .title {
   font-size: 25px;
   margin: 15px 0;
-}
-.main-title {
-  text-align: center;
 }
 .header {
   position: fixed;
@@ -61,9 +58,10 @@ a {
   margin: 0 auto;
   background-color: var(--bg-color-hard);
   z-index: 1;
+  box-shadow: -5px 6px 16px 0px var(--bg-color-hard);
 }
 .header-nav {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px 15px;
 }
@@ -74,13 +72,13 @@ a {
 }
 .burger-button {
   position: absolute;
-  top: 50%;
-  right: 50px;
+  top: 30px;
+  right: 15px;
   width: 30px;
   height: 30px;
   cursor: pointer;
   transform: translate(-50%, -50%);
-  /* display: none; */
+  display: none;
 }
 .burger::before,
 .burger::after,
@@ -116,6 +114,10 @@ a {
 .main {
   margin-top: 80px;
   padding-top: 30px;
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
 }
 .my-photo__wrap {
   position: relative;
@@ -211,8 +213,15 @@ padding: 5px 0;
   width: 40px;
 }
 
+@media screen and (max-width: 760px) {
+  .about-me {
+    flex-direction: column;
+  }
+ 
+}
+
 @media screen and (max-width: 550px) {
-  .burger {
+  .burger-button {
     display: block;
   }
   .nav-list {
@@ -225,11 +234,8 @@ padding: 5px 0;
   .nav-list__item {
     padding: 30px 0;
   }
+ 
 }
-
-
-
-
 
 
 

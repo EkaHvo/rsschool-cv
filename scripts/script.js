@@ -12,7 +12,6 @@ function burgerMenu() {
   function toggleMenu(){
     burger.classList.toggle('active');
     menu.classList.toggle('active');
-    
   }
 }
 
