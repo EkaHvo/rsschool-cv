@@ -7,92 +7,99 @@
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 
-  <header>
-    <div></div>
-    <nav>
-      <ul>
-        <li><a>How It Works</a></li>
-        <li><a>Plan Your Trip</a></li>
-        <li><a>Destinations</a></li>
-        <li><a>Travel Stories</a></li>
-      </ul>
-    </nav>
-    <button>Login</button>
+  <header class="header">
+    <div class="container">
+      <div>я-лого</div>
+      <nav>
+        <ul>
+          <li><a>How It Works</a></li>
+          <li><a>Plan Your Trip</a></li>
+          <li><a>Destinations</a></li>
+          <li><a>Travel Stories</a></li>
+        </ul>
+      </nav>
+      <button>Login</button>
+    </div>
   </header>
 
   <main>
-    <section class="main-page">
-      <h1>Explore the beauty of the World</h1>
-      <p>Recieve personalized recommendations for countries, hotels, activities and more</p>
-      <div>
-        What would you like to do?
-        <button>Start Planning</button>
-      </div>
-    </section>
 
-    <section class="steps-page">
-      <h2>E3 STEPS TO THE PERFECT TRIP</h2>
-      <div>Tell us what you want to do</div>
-      <div>Share us preferable dates </div>
-      <div>We will give you recommendations</div>
-    </section>
+      <section class="main-page">
+          <div class="container">
+              <h1 class="main-title">Explore the beauty of the World</h1>
+              <p class="main-text">Recieve personalized recommendations for countries, hotels, activities and more</p>
+              <div class="search-wrap">
+                <input class="search-input" type="text" placeholder="What would you like to do?">
+                <button class="search-button">Start Planning</button>
+              </div>
+          </div>
+      </section>
 
-    <section class="destinations-page">
-      <h2>POPULAR DESTINATIONS</h2>
-      <div>карусель</div>
-      <button>Find More</button>
-    </section>
+      <section class="steps-page">
+        <h2>E3 STEPS TO THE PERFECT TRIP</h2>
+        <div>Tell us what you want to do</div>
+        <div>Share us preferable dates </div>
+        <div>We will give you recommendations</div>
+      </section>
 
-    <section class="stories-page">
-      <h2>TRAVEL STORIES</h2>
-      <div>
-        <h3>10 Photos of Attractive Thailand</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
-        </p>
-        <a>Read More</a>
-      </div>
-      <div>
-        <h3>Canyonlands National Park, Utah</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        </p>
-        <a>Read More</a>
-      </div>
-      <div>
-        <h3>I left my heart in the Mountains!</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        </p>
-        <a>Read More</a>
-      </div>
-      <div>
-        <h3>The Longest journey in my life!</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-        </p>
-        <a>Read More</a>
-      </div>
+      <section class="destinations-page">
+        <h2>POPULAR DESTINATIONS</h2>
+        <div>карусель</div>
+        <button>Find More</button>
+      </section>
 
-      <button>See More</button>
-    </section>
+      <section class="stories-page">
+        <h2>TRAVEL STORIES</h2>
+        <div>
+          <h3>10 Photos of Attractive Thailand</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... 
+          </p>
+          <a>Read More</a>
+        </div>
+        <div>
+          <h3>Canyonlands National Park, Utah</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          </p>
+          <a>Read More</a>
+        </div>
+        <div>
+          <h3>I left my heart in the Mountains!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          </p>
+          <a>Read More</a>
+        </div>
+        <div>
+          <h3>The Longest journey in my life!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+          </p>
+          <a>Read More</a>
+        </div>
+
+        <button>See More</button>
+      </section>
   </main>
 
   <footer>
-    <div  class="">All Rights Reserved © Travel Portal</div>
-    <ul class="socials">
-      <li>
-        <a href="https://github.com/EkaHvo">instagramm</a>
-      </li>
-      <li><a href="https://rs.school/js-stage0/">utube</a></li>
-      <li><a href="https://rs.school/js-stage0/">twitter</a></li>
-    </ul>
+    <div class="container">
+      <div  class="">All Rights Reserved © Travel Portal</div>
+      <ul class="socials">
+        <li>
+          <a href="https://github.com/EkaHvo">instagramm</a>
+        </li>
+        <li><a href="https://rs.school/js-stage0/">utube</a></li>
+        <li><a href="https://rs.school/js-stage0/">twitter</a></li>
+      </ul>
+    </div>
   </footer>
   
 </body>
