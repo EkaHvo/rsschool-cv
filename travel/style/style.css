@@ -3,6 +3,7 @@
 }
 body {
   position: relative;
+  overflow-x: hidden;
 }
 .container {
   margin: 0 auto;
@@ -20,10 +21,16 @@ body {
   border-radius: 10px;
   border: none;
 }
+.btn svg {
+  margin-right: 10px;
+}
 .big-btn{
   width: 228px;
   height: 59px;
   font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
@@ -41,7 +48,7 @@ body {
   height: 31px;
   width: 216px;
   margin-bottom: 10px;
-  background: no-repeat center / cover url(/travel/images/icons/logo.svg);
+  background: no-repeat center / cover url(/images/icons/logo.svg);
 }
 .nav-list,
 .header .container{
@@ -67,7 +74,7 @@ body {
 
 .preview {
   padding: 122px 0 254px;
-  background: no-repeat center / cover url(/travel/images/main-img.jpg);
+  background: no-repeat center / cover url(/images/main-img.jpg);
   /* font-family: 'Red Hat Display', sans-serif; */
   /* font-family: 'Aleo', serif; */
 }
@@ -169,10 +176,51 @@ body {
   height: 1121px;
 }
 
+.slider {
+  overflow: hidden;
+  margin-top: 45px;
+}
+
+.slides {
+  width: 2580px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 800px;
+  height: 800px;
+  border-radius: 16px;
+}
+
+.dots {
+  margin: 24px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color .3s ease 0s;
+}
+.dot.active,
+.dot:hover {
+  background-color: #F2785C;
+}
+
+
 .bg-stories {
   margin-top: 40px;
   padding-bottom: 62px;
-  background: no-repeat center / cover url(/travel/images/stories-bg.jpg);
+  background: no-repeat center / cover url(/images/stories-bg.jpg);
 }
 .bg-stories-light {
   padding-bottom: 42px;
@@ -188,6 +236,7 @@ body {
 .story-img {
   overflow: hidden;
   width: 400px;
+  height: 250px;
   border-radius: 16px;
   filter: drop-shadow(0px 4px 4px #0D606F);
 }
@@ -207,15 +256,13 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
-.more-btn{
-  text-decoration: underline;
+.more-btn {
+  color: #0D606F;
   font-weight: 700;
 }
-.story-more {
-  display: none;
-}
-.stories .big-btn {
-  display: block;
+
+.destinations .btn,
+.stories .btn {
   margin: 0 auto;
 }
 
