@@ -1,0 +1,248 @@
+:root {
+  --bg-color-light: #e6f1fb;
+  --bg-color: #cedfef;
+  --bg-color-hard: #5e5e98;
+  --border-radius: 5px;
+}
+body {
+  min-width: 320px;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--bg-color-hard);
+  font-size: 18px;
+  background-color:  var(--bg-color-light);
+}
+p {
+  margin: 0;
+}
+.nav-list,
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list:not(.contacts) li{
+  position: relative;
+  padding-left: 20px;
+}
+.list:not(.contacts) li:before{
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 0;
+  width: 10px;
+  height: 3px;
+  background-color: var(--bg-color-hard);
+  border-radius: var(--border-radius);
+}
+a {
+  text-decoration: none;
+  color: var(--bg-color-hard);
+}
+.header a {
+  color: var(--bg-color-light);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title {
+  font-size: 25px;
+  margin: 15px 0;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  background-color: var(--bg-color-hard);
+  z-index: 1;
+  box-shadow: -5px 6px 16px 0px var(--bg-color-hard);
+}
+.header-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.burger-button {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.burger::before,
+.burger::after,
+.burger {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: var(--bg-color-light);
+  transition: 400ms;
+}
+.burger {
+  top: calc(50% - 2px);
+}
+.burger::before {
+  content: '';
+  top: -12px;
+}
+.burger::after {
+  content: '';
+  top: 12px;
+}
+.burger.active {
+  background-color: transparent;
+}
+.burger.active::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.burger.active::after{
+  top: 0;
+  transform: rotate(-45deg);
+}
+.main {
+  margin-top: 80px;
+  padding-top: 30px;
+}
+.about-me {
+  display: flex;
+  justify-content: space-between;
+}
+.my-photo__wrap {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: -5px 6px 16px 0px var(--bg-color-hard);
+}
+.my-photo img {
+  display: block;
+  width: 100%;
+}
+
+.my-photo figcaption{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.code-exmpl .descr {
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  background-color:var(--bg-color-hard);
+  color: var(--bg-color-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: -5px 6px 16px 0px var(--bg-color-hard);
+}
+.experience a {
+  text-decoration: underline;
+}
+.course-item {
+  padding: 10px 0;
+  text-align: center;
+}
+.course-period {
+padding: 5px 0;
+}
+.course-link {
+  display: block;
+  margin: 0 auto;
+  padding: 7px;
+  width: 130px;
+  text-align: center;
+  background-color: var(--bg-color-hard);
+  color: var(--bg-color-light);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  font-weight: bold;
+  box-shadow: -5px 6px 16px 0px var(--bg-color-hard);
+  transition: box-shadow 300ms;
+}
+.course-link:hover {
+  box-shadow: none;
+}
+.footer {
+  padding: 50px 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .list {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts-link {
+  display: block;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.linkedin-link {
+  background-image: url(/images/linkedin.svg);
+  width: 30px;
+}
+.github-link {
+  background-image: url(/images/githhub.svg);
+  width: 30px;
+}
+.rs-link {
+  background-image: url(/images/logo.svg);
+  width: 80px;
+}
+.gmail-link {
+  background-image: url(/images/gmail.svg);
+  width: 40px;
+}
+
+@media screen and (max-width: 760px) {
+  .about-me {
+    flex-direction: column;
+  }
+ 
+}
+
+@media screen and (max-width: 550px) {
+  .burger-button {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .nav-list__item {
+    padding: 30px 0;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+
+
