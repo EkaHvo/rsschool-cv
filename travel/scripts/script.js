@@ -1,5 +1,55 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
+  // burger
+  const body = document.querySelector('body');
+  const menu = document.querySelector('.nav');
+  const burger = document.querySelector('.burger');
+  const close = document.querySelector('.close');
+
+  burger.addEventListener('click', () => {
+    showMenu();
+  });
+
+  close.addEventListener('click', () => {
+    hideMenu();
+  });
+
+  menu.querySelectorAll('.nav-item').forEach(link => {
+    link.addEventListener('click', () => {
+      hideMenu();
+    });
+  });
+
+  function showMenu(){
+    menu.classList.add('active');
+    body.classList.add('lock');
+  }
+  function hideMenu(){
+    menu.classList.remove('active');
+    body.classList.remove('lock');
+  }
+
+  // smooth scroll
+
+  const anchors = document.querySelectorAll('a.nav-link[href*="#"]');
+  
+  anchors.forEach(anchor => {
+    anchor.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const blockID = anchor.getAttribute('href').substring(1);
+
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+
+    });
+  });
+
+
+  // slider
+
   const dotsArr = document.querySelectorAll('.dot');
   const slider = document.querySelector('.slider');
   const slides = slider.querySelector('.slides');
@@ -71,6 +121,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     setActive(id);
   }
 
-  slideItems(2)
+  slideItems(2);
 
 });
