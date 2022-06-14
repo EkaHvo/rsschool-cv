@@ -4,9 +4,17 @@
 body {
   overflow-x: hidden;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 body.lock {
   overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .container {
   margin: 0 auto;
@@ -91,7 +99,7 @@ body.lock {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 42px;
+  gap: 46px;
 }
 .nav-link {
   font-family: 'Red Hat Display', sans-serif;
@@ -102,13 +110,14 @@ body.lock {
   color: #FFFFFF;
   text-decoration: none;
 }
-.nav-link.mobile {
+.nav-item.mobile {
   display: none;
 }
 .nav-btn {
   width: 103px;
   height: 41px;
   font-size: 16px;
+  margin-left: 40px;
 }
 
 .preview {
@@ -122,6 +131,8 @@ body.lock {
   font-size: 80px;
   line-height: 96px;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0;
 }
 .preview-text {
   margin-top: 32px;
@@ -168,7 +179,8 @@ body.lock {
   font-size: 40px;
   line-height: 53px;
   color: #F2785C;
-  padding-top: 80px;
+  padding: 80px 0 0;
+  margin: 0;
 }
 .steps {
   padding-bottom: 15px;
@@ -345,7 +357,7 @@ body.lock {
   filter: drop-shadow(0px 4px 4px #0D606F);
 }
 .story-img img {
-  width: 100%;
+  min-width: 100%;
 }
 .story-description {
   font-family: 'Aleo', serif;
@@ -355,7 +367,9 @@ body.lock {
 .story-title {
   font-size: 35px;
   line-height: 42px;
-  margin-bottom: 24px;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0 0 24px;
 }
 
 .more-btn,
@@ -368,6 +382,8 @@ body.lock {
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
+  padding: 0;
+  margin: 0;
 }
 .more-btn {
   color: #0D606F;
@@ -636,6 +652,9 @@ body.lock {
   .step-text:first-child { 
     max-width: 98px;
   }
+  .bg-stories {
+    background: no-repeat center / cover url(../images/stories-bg-small.jpg);
+  }
   .stories-grid {
     padding: 10px 0;
     grid-template-columns: 155px auto;
@@ -658,7 +677,6 @@ body.lock {
   .slide-arrows {
     display: flex;
   }
-  .destinations,
   .slider {
     margin-top: 20px;
   }

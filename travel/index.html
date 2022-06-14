@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style/reset.css">
+
+  <!-- <link rel="stylesheet" href="style/reset.css"> -->
   <link rel="stylesheet" href="style/style.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
@@ -38,8 +39,8 @@
             <li class="nav-item"><a href="#steps" class="nav-link">Plan Your Trip</a></li>
             <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
             <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
-            <li class="nav-item"><div class="nav-link mobile">Account</div></li>
-            <li class="nav-item"><a href="#footer" class="nav-link mobile">Socials Media</a></li>
+            <li class="nav-item mobile"><div class="nav-link">Account</div></li>
+            <li class="nav-item mobile"><a href="#footer" class="nav-link">Socials Media</a></li>
           </ul>
           <div class="close"></div>
         </nav>
@@ -124,7 +125,10 @@
                       <div class="stories-grid">
   
                           <div class="story-img">
-                            <img src="images/thailand.jpg" alt="Thailand photo">
+                            <picture>
+                              <source srcset="images/thailand-small.jpg" media="(max-width: 560px)">
+                              <img src="images/thailand.jpg" alt="Thailand photo">
+                           </picture>
                           </div>
                           <div class="story-description">                        
                             <h3 class="story-title">10 Photos of Attractive Thailand</h3>
@@ -134,8 +138,11 @@
                             <a class="more-btn" href="#">Read More</a>
                           </div>
   
-                          <div class="story-img">
-                            <img src="images/utah.jpg" alt="Utah photo">
+                          <div class="story-img">                            
+                            <picture>
+                                <source srcset="images/utah-small.jpg" media="(max-width: 560px)">
+                                <img src="images/utah.jpg" alt="Utah photo">
+                            </picture>
                           </div>
                           <div class="story-description">                        
                             <h3 class="story-title">Canyonlands National Park, Utah</h3>
@@ -146,7 +153,10 @@
                           </div>
   
                           <div class="story-img">
-                            <img src="images/mountains.jpg" alt="Mountains photo">
+                            <picture>
+                              <source srcset="images/mountains-small.jpg" media="(max-width: 560px)">
+                              <img src="images/mountains.jpg" alt="Mountains photo">
+                            </picture>
                           </div>
                           <div class="story-description">                        
                             <h3 class="story-title">I left my heart in the Mountains!</h3>
@@ -157,7 +167,10 @@
                           </div>
   
                           <div class="story-img">
-                            <img src="images/longest-journey.jpg" alt="Canion photo">
+                            <picture>
+                              <source srcset="images/longest-journey-small.jpg" media="(max-width: 560px)">
+                              <img src="images/longest-journey.jpg" alt="Canion photo">
+                            </picture>
                           </div>
                           <div class="story-description">                        
                             <h3 class="story-title">The Longest journey in my life!</h3>
