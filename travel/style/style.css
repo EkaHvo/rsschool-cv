@@ -42,6 +42,10 @@ body.lock {
   justify-content: center;
 }
 
+.big-btn:hover .arrow-btn {
+  animation: arrowMove 1.5s infinite;
+}
+
 .header {
   position: absolute;
   z-index: 1;
@@ -164,7 +168,7 @@ body.lock {
   font-size: 40px;
   line-height: 53px;
   color: #F2785C;
-  margin-top: 80px;
+  padding-top: 80px;
 }
 .steps {
   padding-bottom: 15px;
@@ -265,15 +269,27 @@ body.lock {
   color: white;
   text-transform: uppercase;
 }
-.slide-arrow {
-  cursor: pointer;
+.slide-arrows {
   display: none;
   position: absolute;
   top: calc(50% - 13px);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 2;
+  justify-content: space-between;
+  width: 336px;
+}
+.slide-arrow {
+  cursor: pointer;
   width: 15px;
   height: 26px;
   background: no-repeat center / cover url(../images/icons/slide-arrow.svg);
+  opacity: .5;
+  transition: opacity .3s;
+}
+
+.slide-arrow:hover {
+  opacity: 1;
 }
 
 .slide-arrow.pre {
@@ -298,7 +314,7 @@ body.lock {
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
-  transition: background-color .3s ease 0s;
+  transition: background-color .3s;
 }
 .dot.active,
 .dot:hover {
@@ -391,6 +407,12 @@ body.lock {
   align-items: center;
   justify-content: space-between;
 }
+.socials li {
+  transition: all .3s;
+}
+.socials li:hover {
+  transform: scale(1.2);
+}
 @media (max-width: 960px) {
   .burger {
     display: block;
@@ -404,7 +426,7 @@ body.lock {
   }
 
   .burger span {
-    transition: all .3s ease 0s;
+    transition: all .3s;
     top: calc(50% - 1px);
     left: 0px;
     position: absolute;
@@ -530,6 +552,10 @@ body.lock {
     font-size: 12px;
     display: block;
   }
+  .slide {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 @media (max-width: 560px) {
@@ -571,7 +597,7 @@ body.lock {
     width: 10px;
   }
   .title {
-    margin-top: 20px;
+    padding-top: 20px;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: .3px;
@@ -629,8 +655,8 @@ body.lock {
     font-size: 9px;
     margin-top: -6px;
   }
-  .slide-arrow {
-    display: block;
+  .slide-arrows {
+    display: flex;
   }
   .destinations,
   .slider {
@@ -676,5 +702,17 @@ body.lock {
   }
   .footer {
     bottom: 16px;
+  }
+}
+
+@keyframes arrowMove {
+  0% { 
+    transform: translateX(0);
+  }
+  25% { 
+    transform: translateX(-15px);
+  }
+  100% { 
+    transform: translateX(5px);
   }
 }
