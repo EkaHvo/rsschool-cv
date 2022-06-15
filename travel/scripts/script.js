@@ -87,9 +87,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
   function moveSlider(id){
     const gapPX = getComputedStyle(slides).gap;
     const slideWidthPX = getComputedStyle(slide).width;
-    const gap = +(gapPX.slice(0, gapPX.length-2));
 
+    const gap = +(gapPX.slice(0, gapPX.length-2));
     const slideWidth = +(slideWidthPX.slice(0, slideWidthPX.length-2));
+
     const centerScreen = window.screen.width/2;
     const halfSlide = slideWidth/2;
     const wholeSlide = gap + slideWidth;
