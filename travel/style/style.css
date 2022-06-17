@@ -453,7 +453,11 @@ ul {
 .socials li:hover {
   transform: scale(1.2);
 }
-@media (max-width: 960px) {
+
+body {
+  width: 1440px;
+}
+/* @media (max-width: 960px) {
   .burger {
     display: block;
     position: absolute;
@@ -745,7 +749,7 @@ ul {
   .footer {
     bottom: 16px;
   }
-}
+} */
 
 @keyframes arrowMove {
   0% { 
