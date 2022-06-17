@@ -195,6 +195,13 @@ padding: 5px 0;
   justify-content: space-between;
 }
 
+.contacts {
+  display: flex;
+  align-items: flex-end;
+  width: 248px;
+  justify-content: space-between;
+}
+
 .contacts-link {
   display: block;
   height: 30px;
