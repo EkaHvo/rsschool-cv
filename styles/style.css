@@ -197,19 +197,19 @@ padding: 5px 0;
 }
 
 .linkedin-link {
-  background-image: url(/images/linkedin.svg);
+  background-image: url(../images/linkedin.svg);
   width: 30px;
 }
 .github-link {
-  background-image: url(/images/githhub.svg);
+  background-image: url(../images/githhub.svg);
   width: 30px;
 }
 .rs-link {
-  background-image: url(/images/logo.svg);
+  background-image: url(../images/logo.svg);
   width: 80px;
 }
 .gmail-link {
-  background-image: url(/images/gmail.svg);
+  background-image: url(../images/gmail.svg);
   width: 40px;
 }
 
