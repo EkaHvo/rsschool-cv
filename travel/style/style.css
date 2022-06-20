@@ -2,14 +2,23 @@
   box-sizing: border-box;
 }
 body {
-  overflow-x: hidden;
-  position: relative;
   margin: 0;
   padding: 0;
 }
+
 body.lock {
   overflow: hidden;
 }
+
+.main-container {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.overlay {
+ display: none;
+}
+
 
 ul {
   list-style: none;
@@ -455,7 +464,8 @@ ul {
   transform: scale(1.2);
 }
 
-/* @media (max-width: 960px) {
+@media (max-width: 960px) {
+
   .burger {
     display: block;
     position: absolute;
@@ -494,6 +504,15 @@ ul {
     transform: rotate(45deg);
     bottom: calc(50% - 1px);
   }
+  .overlay.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 30%);
+  }
   .preview {
     padding: 96px 0 61px;
   }
@@ -507,7 +526,7 @@ ul {
     position: absolute;
     right: 0;
     transform: translateX(100%);
-    top: -20px;
+    top: 0;
     padding: 45px 15px 30px 44px;
     z-index: 5;
     background: #F2785C;
@@ -522,7 +541,7 @@ ul {
     line-height: 21px;
     align-items: end;
   }
-  .nav-link.mobile {
+  .nav-item.mobile {
     display: block;
   }
   .nav-item:nth-child(2){
@@ -612,6 +631,14 @@ ul {
     box-shadow: none;
     top: 20px;
   }
+  .header {
+    background: inherit;
+    box-shadow: none;
+    top: 20px;
+  }
+  .nav {
+    top: -20px;
+  }
   .preview {
     padding: 96px 0 61px;
   }
@@ -680,7 +707,9 @@ ul {
   }
   .bg-stories {
     background: no-repeat center / cover url(../images/stories-bg-small.jpg);
+    margin-top: 10px;
   }
+  
   .stories-grid {
     padding: 10px 0;
     grid-template-columns: 155px auto;
@@ -734,9 +763,6 @@ ul {
     margin: 0 3px;
   }
 
-  .bg-stories {
-    margin-top: 10px;
-  }
   .bg-stories-light {
     padding-bottom: 13px;
   }
@@ -745,9 +771,18 @@ ul {
     margin: 0 auto;
   }
   .footer {
-    bottom: 16px;
+    bottom: 12px;
   }
-} */
+}
+@media (max-width: 370px){
+  .slide {
+    width: 300px;
+    height: 175px;
+  }
+  .slide-arrows {
+    width: 280px;
+  }
+}
 
 @keyframes arrowMove {
   0% { 
