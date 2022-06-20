@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     menu.classList.add('active');
     body.classList.add('lock');
   }
+  
   function hideMenu(){
     menu.classList.remove('active');
     body.classList.remove('lock');
