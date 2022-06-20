@@ -3,14 +3,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
   // burger
   const body = document.querySelector('body');
   const menu = document.querySelector('.nav');
-  const burger = document.querySelector('.burger');
-  const close = document.querySelector('.close');
+  const burger = body.querySelector('.burger');
+  const overlay = body.querySelector('.overlay');
+  const close = menu.querySelector('.close');
 
   burger.addEventListener('click', () => {
     showMenu();
   });
 
   close.addEventListener('click', () => {
+    hideMenu();
+  });
+
+  overlay.addEventListener('click', () => {
     hideMenu();
   });
 
@@ -22,11 +27,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
   function showMenu(){
     menu.classList.add('active');
+    overlay.classList.add('active');
     body.classList.add('lock');
   }
   
   function hideMenu(){
     menu.classList.remove('active');
+    overlay.classList.remove('active');
     body.classList.remove('lock');
   }
 
