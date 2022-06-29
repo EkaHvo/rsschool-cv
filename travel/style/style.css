@@ -19,7 +19,6 @@ body.lock {
  display: none;
 }
 
-
 ul {
   list-style: none;
   margin: 0;
@@ -28,8 +27,7 @@ ul {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  /* max-width: 1230px; */
-  width: 1230px;
+  max-width: 1230px;
 }
 .btn {
   font-family: 'Red Hat Display', sans-serif;
