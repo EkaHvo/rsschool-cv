@@ -15,6 +15,112 @@ body.lock {
   position: relative;
 }
 
+.popup {
+  position: fixed;
+  width: 650px;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  color: #0D606F;
+  padding: 25px 45px;
+  font-family: 'Aleo', serif;
+}
+.popup-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.popup-FBbtn,
+.popup-Googlebtn {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: 'Red Hat Text';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: .6px;
+}
+.popup-FBbtn {
+  color: white;
+  background: #1877F2;
+}
+.popup-Googlebtn {
+  background: #FFFFFF;
+}
+
+.popup-Googlebtn svg,
+.popup-FBbtn svg{
+  margin-right: 15px;
+}
+.divider-or-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 10px;
+}
+.divider-or {
+  padding: 0 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(13, 96, 111, 0.5);
+  position: relative;
+  width: 100%;
+}
+.popup input {
+  height: 54px;
+  display: block;
+  background: #FFFFFF;
+  box-shadow: inset 0px 0px 3px rgb(13 96 111 / 8%), inset 0px 2px 3px rgb(13 96 111 / 16%);
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+}
+.popup label {
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+}
+.forgot {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  margin: 10px 0 25px;
+  text-align: center;
+}
+.popup-reg {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(13, 96, 111, 0.5);
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  text-align: center;
+  margin-top: 20px;
+}
+.popup-reg-link {
+  color: rgb(13, 96, 111);
+  margin-left: 5px;
+  text-decoration-line: underline;
+}
 .overlay {
  display: none;
 }
@@ -57,6 +163,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.popup-btn {
+  width: 100%;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .big-btn:hover .btns-arrow {
