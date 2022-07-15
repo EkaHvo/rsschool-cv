@@ -616,6 +616,16 @@ ul {
 
 @media (max-width: 960px) {
 
+  .popup {
+    width: 500px;
+  }
+  .popup-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .divider-or-wrap {
+    margin: 10px 0;
+  }
   .burger {
     display: block;
     position: absolute;
@@ -679,7 +689,7 @@ ul {
     border-radius: 10px;
     transition: all .3s;
   }
-  .nav-list {
+  .nav-mobile .nav-list {
     flex-direction: column;
     gap: 10px;
     font-size: 16px;
